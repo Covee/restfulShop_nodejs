@@ -15,6 +15,7 @@ mongoose.connect(
     {
     // useMongoClient option is no longer necessary in mongoose 5.x
     //  useMongoClient: true
+    useNewUrlParser: true
 });
 
 // Middlewares
