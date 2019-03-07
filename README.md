@@ -27,8 +27,12 @@ npm install --save-dev nodemon
 ```
 
 5. Now you don't need to re-run the server everytime you make any difference in your code and check.
-```
+```console
 npm start
 ```
 
-6. 
+6. Install morgan(logger) in the project to see the logs on your prompt.
+```console
+npm install --save morgan
+```
+
