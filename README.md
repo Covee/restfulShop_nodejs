@@ -35,3 +35,10 @@ npm start
 npm install --save morgan
 ```
 
+7. Install mongoose to use MongoDB fluently(and follow the code in proper commit)
+```console
+npm install --save mongoose
+```
+
+
+
