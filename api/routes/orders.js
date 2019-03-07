@@ -10,6 +10,7 @@ router.get('/', (req, res, next) => {
     Order
         .find()
         .select('product quantity _id')
+        .populate('product', 'name')  // populate brings first param as a query, second param as a selecting specific query.
         .then(docs => {
             res.status(200).json({
                 count: docs.length,
@@ -70,6 +71,7 @@ router.post('/', (req, res, next) => {
 
 router.get('/:orderId', (req, res, next) => {
     Order.findById(req.params.orderId)
+        .populate('product')
         .exec()
         .then(order => {
             if (!order) {
