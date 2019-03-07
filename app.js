@@ -13,7 +13,8 @@ const orderRoutes = require('./api/routes/orders');
 mongoose.connect(
     'mongodb+srv://admin:' + process.env.MONGO_ATLAS_PW + '@restfulshop-nodejs-4owoa.mongodb.net/test?retryWrites=true',
     {
-     useMongoClient: true
+    // useMongoClient option is no longer necessary in mongoose 5.x
+    //  useMongoClient: true
 });
 
 // Middlewares
