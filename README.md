@@ -1,5 +1,4 @@
 # SIMPLE RESTful API Practice (Shop)
-==================================
 
 ## Getting To Start
 
