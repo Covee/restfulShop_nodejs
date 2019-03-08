@@ -2,12 +2,12 @@
 
 ## Getting To Start
 
-1. Make project directory
+1. Make project directory.
 ```console
 mkdir <project_name>
 ```
 
-2. Install Express in the project dir
+2. Install Express in the project dir.
 ```console
 npm install --save express
 ```
@@ -40,5 +40,13 @@ npm install --save morgan
 npm install --save mongoose
 ```
 
+8. Go further improvement by yourself from here.
+
+
+## Sources from
+
+[Videos](https://www.youtube.com/playlist?list=PL55RiY5tL51q4D-B63KBnygU6opNPFk_q)
+<br />
+[Source Code](https://github.com/academind/node-restful-api-tutorial/tree/13-controllers)
 
 
