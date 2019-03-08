@@ -8,6 +8,7 @@ const mongoose = require('mongoose');
 // Routes
 const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
+const userRoutes = require('./api/routes/user');
 
 // MongoDB Atlas connection (put PW in different file inside of env; nodemon.json)
 mongoose.connect(
@@ -38,6 +39,7 @@ app.use((req, res, next) => {
 // Middleware Routers
 app.use('/products', productRoutes);
 app.use('/orders', orderRoutes);
+app.use('/user', userRoutes);
 // Error Handling
 app.use((req, res, next) => {
     const err = new Error('Not Found.');
